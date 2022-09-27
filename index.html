@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CARTA</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- this is gonna be the container of the cards board  -->
+    <section id="board">
+      <img
+        src="images/phone.png"
+        alt=" phone background"
+        id="phone-background"
+      />
+      <h3 id="title">CARTA</h3>
+      <hr />
+      <div id="bot-section">
+        <img src="images/botProfile.png" alt="" id="bot-image" />
+
+        <h2 id="bot-name">Asma</h2>
+        <div class="score">
+          <i class="bx bx-trophy"></i>
+          <span id="bot-score">0</span>
+        </div>
+        <span class="bot-timer">00<span id="bot-blink">:</span>30</span>
+      </div>
+      <div id="play-ground">
+        <!-- <img src="images/cardBack.jpg" alt="" id="play-ground-img" /> -->
+      </div>
+      <div id="player-section">
+        <img src="images/playerProfile.png" alt="" id="player-image" />
+
+        <h2 id="player-name">Rave</h2>
+        <div class="scoreP">
+          <i class="bx bx-trophy"></i>
+          <span id="player-score">0</span>
+        </div>
+        <span class="player-timer">00<span id="player-blink">:</span>30</span>
+      </div>
+    </section>
+    <script src="game.js"></script>
+  </body>
+</html>

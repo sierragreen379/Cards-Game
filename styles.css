@@ -1,0 +1,177 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Poppins:wght@200;300&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* these are css variables */
+
+:root { 
+    --main-color:#FFCA03;
+    --second-color: #C689C6;
+    --text-color: #395B64;
+    --gradient: linear-gradient(#b560f9,#C689C6);
+} 
+
+
+/* working on the board layout */
+
+#board {
+    width: 300px;
+    height: 600px;
+    border-radius: 15px;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+#phone-background {
+    width: 98%;
+    position: absolute;
+}
+
+#title {
+    position: absolute;
+    top: 4.5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #e4e4e4;
+    font-size: 1.2rem;
+}
+hr {
+    position: absolute;
+    border: none;
+    border-top: 2px solid #e4e4e4;
+    top: 9%;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* the bot section   && the player section */
+
+#bot-section {
+    position: absolute;
+    top: 9.5%;
+    width: 90%;
+    border-bottom: 2px solid var(--main-color);
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 10%;
+}
+#player-section {
+    position: absolute;
+    bottom: 0.3%;
+    width: 90%;
+    border-top: 2px solid var(--main-color);
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 10%;
+}
+#bot-image {
+    width: 15%;
+    border: 2px solid var(--main-color);
+    border-radius: 100%;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+#player-image {
+    width: 15%;
+    border: 2px solid var(--main-color);
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0, -50%);
+}
+#bot-name {
+    position: absolute;
+    left: 21%;
+    top: 1%;
+    transform: translate(0, -1%);
+    font-size: 1rem;
+    color: #e4e4e4;
+    font-family: 'Amiri Quran', serif;
+}
+#player-name {
+    position: absolute;
+    right: 21%;
+    top: 1%;
+    transform: translate(0, -1%);
+    font-size: 1rem;
+    color: #e4e4e4;
+    font-family: 'Amiri Quran', serif;
+}
+.score {
+    position: absolute;
+    left: 21%;
+    top: 85%;
+    transform: translate(0, -85%);
+    font-size: 1rem;
+}
+.scoreP {
+    position: absolute;
+    right: 21%;
+    top: 85%;
+    transform: translate(0, -85%);
+    font-size: 1rem;
+}
+.score i, .scoreP i {
+    color: var(--main-color);
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+.score span, .scoreP span {
+    font-size: 0.8rem;
+    position: relative;
+    bottom: 1px;
+    right: 2px;
+    color: var(--main-color);
+    font-family: 'Amiri Quran', serif;
+    font-weight: 600;
+}
+.bot-timer {
+    font-family: 'Amiri Quran', serif;
+    font-size: 1rem;
+    position: absolute;
+    right: 10%;
+    color: var(--main-color);
+    top: 50%;
+    transform: translate(0, -50%);
+    font-weight: 600;
+}
+.player-timer {
+    font-family: 'Amiri Quran', serif;
+    font-size: 1rem;
+    position: absolute;
+    left: 10%;
+    color: var(--main-color);
+    top: 50%;
+    transform: translate(0, -50%);
+    font-weight: 600;
+}
+
+
+/* playground section */
+
+#play-ground {
+    position: absolute;
+    top: 19.6%;
+    height: 70.1%;
+    width: 90%;
+    left: 47%;
+    transform: translate(-47%, 0);
+    background: url(images/cardBack.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
