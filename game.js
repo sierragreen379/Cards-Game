@@ -14,28 +14,53 @@ setInterval(() => {
 
 /////////////////// ========> I - Creating the Cards <======== //////////////////////////
 
-const COLORS = ["blue", "red", "green"];
-const VALUES = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "69"];
+// const COLORS = ["blue", "red", "green"];
+// const VALUES = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "69"];
+
+// class Deck {
+//   constructor(cards = newDeck()) {
+//     this.cards = cards;
+//   }
+// }
+
+// class Card {
+//   constructor(color, value) {
+//     this.color = color;
+//     this.value = value;
+//   }
+// }
+
+// function newDeck() {
+//   return COLORS.flatMap((color) => {
+//     return VALUES.map((value) => {
+//       return new Card(color, value);
+//     });
+//   });
+// }
+
+// log(Deck.cards);
 
 class Deck {
-  constructor(cards = newDeck()) {
-    this.cards = cards;
+  constructor() {
+    // values 1-9 here?
   }
 }
 
-class Card {
-  constructor(color, value) {
-    this.color = color;
-    this.value = value;
+// Do we need these? Literally the only thing that will change is the color. We can use the array for that
+class Blue extends Deck {
+  constructor() {
+
   }
 }
 
-function newDeck() {
-  return COLORS.flatMap((color) => {
-    return VALUES.map((value) => {
-      return new Card(color, value);
-    });
-  });
+class Red extends Deck {
+  constructor() {
+
+  }
 }
 
-log(Deck.cards);
+class Green extends Deck {
+  constructor() {
+
+  }
+}
