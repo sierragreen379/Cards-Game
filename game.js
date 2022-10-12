@@ -70,9 +70,11 @@ let deck = [
   {color: "green", value: 9}
 ];
 
+// I put these buttons in the HTML just to be able to test my code
 const testBotButton = document.getElementById("test-bot-button");
 const testPlayerButton = document.getElementById("test-player-button");
 
+// playingCard will be a variable that accesses the card currently being played from the DOM
 class Card {
   constructor({color, value} = cardType) {
     this.color = color;
